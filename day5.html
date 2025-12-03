@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DAY 5 </title>
+</head>
+<body>
+    <h1>TASK 1 </h1>
+    <script>
+        function sayHello() {
+     document.write("Hello, World!");
+}
+
+// Call the function
+sayHello();
+    </script>
+<hr>
+
+<h2> TASK 2 </h2>
+
+<script>
+    function cube(num){
+        return num *num * num ;
+    }
+    document.write(cube(3));
+</script>
+<hr>
+
+<h2> TASK 3</h2>
+<script>
+function checkEvenOdd(num) {
+  if (num % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
+
+// Example usage:
+document.write(checkEvenOdd(5),"<br>"); 
+document.write(checkEvenOdd(7)); 
+
+</script>
+<hr>
+
+<h2> TASK 4 </h2>
+
+<script>
+    function factorial(num) {
+  if (num < 0) {
+    return "Factorial is not defined";
+  }
+  
+  let result = 1;
+  for (let i = 1; i <= num; i++) {
+    result *= i;
+  }
+  return result;
+}
+   document.write(factorial(5),"<br>");
+   document.write(factorial(-3)); 
+</script>
+<hr>
+
+<h2>TASK 5 </h2>
+
+<script>
+    function addNumbers(a, b) {
+  return a + b;
+}
+
+// Example usage:
+document.write(addNumbers(3, 5));
+</script>
+<hr>
+
+<h2> TASK 6 </h2>
+<script>
+    function largestOfThree(a, b, c) {
+  return Math.max(a, b, c);
+}
+
+     document.write(largestOfThree(9, 3, 11)); 
+</script>
+<hr>
+
+<h2> TASK 7 </h2>
+
+<script>
+    function isPalindrome(str){
+        let reversed =str.split ("").reverse().join("");
+        return str === reversed;
+    }
+document.write(isPalindrome("racecar"))
+</script>
+<hr>
+
+<h2> TASK 8 </h2>
+<script>
+    // Function to convert Celsius to Fahrenheit
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 5/5) + 32;
+}
+    document.write("0°C = " + celsiusToFahrenheit(0) + "°F<br>");
+     document.write("25°C = " + celsiusToFahrenheit(25) + "°F<br>");
+</script>
+<hr>
+
+<h2> TASK 9</h2>
+
+<script>
+    
+function calculateSimpleInterest(principal, rate, time) {
+    return (principal * rate * time) / 100;
+}  
+
+document.write(calculateSimpleInterest(5000, 10, 1)); 
+</script>
+<hr>
+
+<h2> TASK 10 </h2>
+<script>
+function reverseArray(arr) {
+    return arr.reverse();
+}
+document.write(reverseArray([1, 2, 3, 4, 5])); 
+</script>
+<hr>
+
+<h2> TASK 11 </h2>
+<script>
+ function countVowels(str) {
+      str = str.toLowerCase();
+         let count = 0;
+         for (let i = 0; i < str.length; i++) {
+             if ("aeiou".includes(str[i])) {
+            count++;
+  }
+     }
+      return count;
+        }
+        var text1 = "Hello World";
+        var text2 = "Karthi"
+        document.write(text1 + "  Vowels: " + countVowels(text1) + "<br>");
+        document.write(text2 + " vowels: " +  countVowels(text2));
+
+</script>
+<hr>
+
+<h2> TASK 12 </h2>
+<script>
+
+    
+const doubleArray = arr => arr.map(num => num * 2);
+
+document.write(doubleArray([1, 2, 3, 4, 5]),"<br>"); 
+document.write(doubleArray([10, 20, 30]));    
+</script>
+<hr>
+
+<h2> TASK 13 </h2>
+<script>
+   function run(cb) {
+  cb(); 
+}
+run(() => document.write("Callback karthi!"));
+</script>
+<hr>
+
+<h2> TASK 14 </h2>
+<script>
+    
+function findMax(a, b, c) {
+  return Math.max(a, b, c);
+}
+   document.write(findMax(10, 25, 7)); 
+</script>
+<hr>
+
+<h2> TASK 15 </h2>
+ALLREADY FINISHED TASK 
+<hr>
+
+
+<h2> TASK 16 </h2>
+
+<script>
+function calculateCircleArea(radius) {
+    if (radius <= 0) {
+        return "Radius must be a positive number";
+    }
+    return Math.PI * Math.pow(radius, 2);
+}
+document.write(calculateCircleArea(5)); 
+</script>
+<hr>
+
+<h2> TASK 17 </h2>
+
+<script>
+function capitalizeWords(sentence) {
+    return sentence
+        .split(" ") 
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" "); 
+}
+   document.write(capitalizeWords("hello world")); 
+</script>
+<hr>
+
+<h2> TASK 18 </h2>
+<script>
+    
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+document.write(reverseString("Kovilpatti")); 
+</script>
+<hr>
+
+<h2>TASK 19 </h2>
+<script>
+function countVC(str) {
+  let vowels = 0, consonants = 0;
+  const v = "aeiouAEIOU";
+  
+  for (let ch of str) {
+    if (/[a-zA-Z]/.test(ch)) {
+      if (v.includes(ch)) {
+        vowels++;
+      } else {
+        consonants++;
+      }
+    }
+  }
+  
+  return { vowels, consonants };
+}
+document.write(countVC("Kovilpatti")); 
+</script>
+   <hr>
+
+   <h2> TASK 20 </h2>
+<script>
+    function isPrime(num) {
+  if (num <= 1) return false;   
+
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false;  
+    }
+  }
+
+  return true; 
+}
+document.write(isPrime(7),"<br>");  
+document.write(isPrime(10)); 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>  
