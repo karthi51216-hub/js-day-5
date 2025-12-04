@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 6</title>
+</head>
+<body>
+    <h1>TASK 1 </h1>
+    <script>
+      
+const students = ["Arun", "Priya", "Karthik", "Meena", "Ravi"];
+document.write(students);
+    </script>
+<hr>
+
+<h1> Task 2 </h1>
+<script>
+
+const name = ["Arun", "Priya", "Karthik", "Meena", "Ravi"];
+name.push("Suresh");
+document.write(name);
+</script>
+<hr>
+
+<h1> TASK 3 </h1>
+<script>
+    const names =["Arun", "Priya", "Karthik", "Meena", "Ravi","suresh"];
+    const removedNames = names.pop();
+document.write(names);
+console.log("Removed names:", removedStudent);
+</script>
+<hr>
+
+<h1> TASK 4 </h1>
+<script>
+  
+const study = ["Arun", "Priya", "Karthik", "Meena", "Ravi"];
+const upperCaseStudents = study.map(name => name.toUpperCase());
+document.write(upperCaseStudents);
+</script>
+<hr>
+
+<h1> TASK 5 </h1>
+<script>
+const s= ["Arun", "Priya", "Karthik", "Meena", "Ravi", "Anitha", "Ajay"];
+const sWithA = s.filter(name => name.startsWith("A"));
+document.write(sWithA);
+</script>
+<hr>
+
+<h1> TASK 6 </h1>
+<script>
+
+const t= ["Arun", "Priya", "Karthik", "Rani"];
+t.forEach(function(t){
+    document.write(t);
+});
+</script>
+
+<hr>
+
+<h1> TASK 7 </h1>
+<script>
+   
+const book = {
+  title: "JavaScript Essentials",
+  author: "Karthi",
+  price: 499
+};
+document.write(book);
+// Accessing individual properties
+document.write("Title:", book.title,"<br>");
+document.write("Author:", book.author,"<br>");
+document.write("Price:", book.price);
+</script>
+<hr>
+
+<h1> TASK 8 </h1>
+<script>
+    // Create a book object
+const books = {
+  title: "JavaScript Easy",
+  author: "Karthi",
+  price: 599
+};
+const properties = Object.keys(books);
+
+document.write(properties);
+</script>
+<hr>
+
+<h1> TASK 9 </h1>
+<script>
+// Book object
+let ok = {
+  title: "The Alchemist",
+  author: "Paulo Coelho",
+  year: 1988,
+  genre: "Fiction"
+};
+let values = Object.values(ok);
+document.write(values);
+</script>
+<hr>
+
+
+<h1> TASK 10</h1>
+<script>
+let m = {
+  title: "Wings of Fire",
+  author: "A.P.J. Abdul Kalam",
+  year: 1999,
+  genre: "Autobiography"
+};
+
+document.write(m);
+</script>
+<hr>
+
+<h1> TASK 11 </h1>
+
+<script>
+let p = {
+  title: "JavaScript Basics",
+  author: "Karthi",
+  price: 500
+};
+delete p.price;
+document.write(p);
+</script>
+<hr>
+
+
+<h1> TASK 12</h1>
+<script>
+const k = {
+  title: "JavaScript Basics",
+  author: "Karthi"
+};
+const publisher = {
+  name: "TechPress",
+  year: 2025
+};
+// Merge publisher into book
+Object.assign(k, publisher);
+document.write(k)
+</script>
+<hr>
+
+<h1> TASK 13 </h1>
+
+<script>
+// Define a book object
+const y = {
+  title: "The Alchemist",
+  author: "Paulo Coelho",
+  year: 1988,
+  genre: "Fiction"
+}
+const entries = Object.entries(y);
+
+document.write(entries);
+</script>
+<hr>
+
+
+<h1> TASK 14 </h1>
+<script>
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Use filter() to get only odd numbers
+let oddNumbers = numbers.filter(num => num % 2 !== 0);
+document.write("Odd Numbers:", oddNumbers);
+</script>
+<hr>
+
+<h1> TASK 15 </h1>
+
+<script>
+
+let scores = [85, 92, 78, 90, 66, 99, 74];
+
+// Sort in descending order
+scores.sort(function(a, b) {
+  return b - a; 
+});
+document.write(scores);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
